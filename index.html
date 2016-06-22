@@ -13,24 +13,31 @@
 </head>
 <body ng-app>
     <!-- Header -->
-    <div id="header_div" class="header">Шифр Цезаря</div>
+    <div id="header_div" class="header_div">Шифр Цезаря</div>
 
     <!-- Body -->
-    <div id="body_div" class="body">
+    <div id="body_div" class="body_div">
         <table>
             <tr>
-                <td></td>
                 <td>
-                    <button> Enccode</button>
+                    <textarea cols="35" rows="15" ng-model="leftTextArea"></textarea>
+                </td>
+                <td>
+                    <label>ROT:</label>
+                    <input type="text" size="3" maxlength="4" ng-model="rotateStep">
+                    <br><br>
+                    <button>Enccode</button>
                     <button>Decode</button>
                 </td>
-                <td></td>
+                <td>
+                    <textarea cols="35" rows="15" readonly ng-model="rightTextArea"></textarea>
+                </td>
             </tr>
         </table>
     </div>
 
     <!-- Footer -->
-    <div id="footer_div" class="footer"></div>
+    <div id="footer_div" class="footer_div"></div>
 
     <!-- Подключим AngularJS -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
