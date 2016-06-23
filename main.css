@@ -11,9 +11,20 @@ body {
 div.header_div {
     text-align: left;
     width: 800px;
-    border: 1px solid;
+    /*border: 1px solid;*/
     margin: 0 auto;
-    padding: 5px;
+    padding: 10px;
+    background-color: #44618e;
+}
+
+div.header_div h2 {
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+    font-size: 35px;
+    color: #d8d8d8;
+}
+
+div.header_div h4 {
+
 }
 
 div.body_div {
